@@ -2,11 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-}
+
 
 /* Navbar Styling */
 .navbar {
@@ -156,6 +152,7 @@ body {
 
 .services h2 {
     color: #fb5012;
+    margin-bottom: 20px;
 }
 
 #services-col {
