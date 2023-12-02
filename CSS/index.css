@@ -1,0 +1,270 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #2D3142;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    /* Vertical alignment */
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+    /* Adjust this for spacing between the logo and text */
+    /*
+    border-radius: 50%;
+    overflow: hidden; /* Ensure the image doesn't overflow if not a perfect square */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fefefe;
+}
+
+.navbar-nav .nav-link {
+    margin: 5px;
+    /* Adjust this for spacing between the links */
+    white-space: nowrap;
+    /* Prevent text from wrapping onto the next line */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #db8d34;
+}
+
+
+
+/* Hero Section Styling */
+/* Hero Section Styling with Blur Effect */
+.hero {
+    background: linear-gradient(to bottom left, #bfc0c060 60%, transparent 50%);
+    position: relative;
+    color: #000000;
+    text-align: center;
+    padding: 100px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Pseudo-element for the blurred background */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../Assets/images/IMG_20200306_132002.jpg) center/cover no-repeat;
+    filter: blur(5px) grayscale(50%);
+    z-index: -1;
+}
+
+#hero-btn {
+    background-color: #2D3142;
+    color: #ffffff;
+    border: none;
+}
+
+.i {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #2D3142;
+    font-size: 100px;
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 100px;
+}
+
+.hero hr {
+    border: 1.5px solid #2D3142;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero p {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffbca4;
+    font-size: 25px;
+}
+
+
+/* About Us Section Styling */
+.about-us {
+    /*background-color: #ecf0f1;*/
+    background: linear-gradient(to bottom right, #2D3142 50%, transparent 50%);
+    padding: 80px 0;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#aboutUs-h2 {
+    margin-bottom: 20px;
+    color: #fb5012;
+}
+
+.about-color {
+    background-color: #f5d3c8;
+}
+
+.abt-info {
+    border-radius: 5px;
+}
+
+#about-col {
+    height: 50vh;
+}
+
+#about-img {
+    height: inherit;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#abt-info {
+    border-radius: 5px;
+}
+
+
+
+
+/* Our Services Section Styling */
+.services {
+    background: linear-gradient(to bottom left, #BFC0C0 50%, transparent 50%);
+    padding: 80px 0;
+    text-align: center;
+    min-height: fit-content;
+}
+
+.services h2 {
+    color: #fb5012;
+}
+
+#services-col {
+    height: 50vh;
+    border-radius: 5px;
+}
+
+.service-color {
+    background-color: #2D3142;
+}
+
+.services li {
+    color: #ffffff;
+}
+
+.service-category {
+    margin-top: 40px;
+
+}
+
+.service-category h3 {
+    color: #fb5012;
+}
+
+.service-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-category li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.services img {
+    border-radius: 10px;
+}
+
+
+
+/* CTA Section Styling */
+.cta {
+    background-color: #2D3142;
+    padding: 100px 0px 100px 0px;
+    text-align: center;
+    color: #000000;
+    height: 40vh;
+}
+
+.cta h2 {
+    color: #fb5012;
+}
+
+.cta p {
+    color: #ffffff;
+}
+
+#cta-btn {
+    background-color: #fb5012;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+
+/* Contact Us Section Styling */
+.contact {
+    background: linear-gradient(to top right, #fb501254 50%, white 50%);
+    padding: 150px 0;
+    text-align: center;
+    min-height: 100dvh;
+}
+
+.contact h2 {
+    color: #fb5012;
+}
+
+.col {
+    margin-right: 0%;
+}
+
+.details {
+    text-align: start;
+}
+
+#info {
+    padding: 15px;
+    background-color: #BFC0C0;
+    border-radius: 5px;
+}
+
+
+/*hover animation */
+.hover-animation {
+    transition: transform 0.3s ease;
+}
+
+.hover-animation:hover {
+    transform: scale(1.05);
+}
+
+/*fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
