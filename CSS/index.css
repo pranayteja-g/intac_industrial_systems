@@ -1,3 +1,7 @@
+:root{
+    font-size: 16px;
+}
+
 body {
     font-family: 'Arial', sans-serif;
 }
@@ -54,6 +58,7 @@ body {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    z-index: 1; /* Set z-index here */
 }
 
 /* Pseudo-element for the blurred background */
@@ -67,6 +72,24 @@ body {
     background: url(../Assets/images/IMG_20200306_132002.jpg) center/cover no-repeat;
     filter: blur(5px) grayscale(50%);
     z-index: -1;
+}
+
+.hero-text {
+    position: relative; /* Ensure stacking context for .hero-text */
+    z-index: 1;
+}
+
+.company-logo {
+    border-radius: 0.2rem;
+    width: 20rem; 
+    height: auto; 
+    position: absolute;
+    top: 50%; /* Center the logo vertically */
+    left: 50%; /* Center the logo horizontally */
+    mix-blend-mode: multiply;
+    transform: translate(-50%, -50%); /* Center the logo precisely */
+    opacity: 0.7; 
+    z-index: 0.5; 
 }
 
 #hero-btn {
