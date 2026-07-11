@@ -1,419 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intac Industrial Systems | Gallery</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!--boostrap icons cdn-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-  <!--fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-    }
-
-    /* Navbar Styling */
-    .navbar {
-      background-color: #2D3142;
-    }
-
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-      /* Vertical alignment */
-    }
-
-    .navbar-brand img {
-      margin-right: 10px;
-    }
-
-    .navbar-brand,
-    .navbar-nav .nav-link {
-      color: #fefefe;
-    }
-
-    .navbar-nav .nav-link {
-      margin: 5px;
-      /* Adjust this for spacing between the links */
-      white-space: nowrap;
-      /* Prevent text from wrapping onto the next line */
-    }
-
-    .navbar-nav .nav-link:hover {
-      color: #db8d34;
-    }
-
-    .hero {
-      /* background: linear-gradient(to bottom left, #99a0be 50%, transparent 50%); */
-      background: linear-gradient(to bottom left, rgba(153, 160, 190, 0.8) 50%, transparent 50%);
-      height: 60dvh;
-      height: 60vh;
-    }
-
-    .hero h1 {
-      font-size: 50px;
-    }
-
-    .hero p {
-      font-weight: 400;
-    }
-
-    .card img {
-      object-fit: cover;
-    }
-
-    .cards {
-      border-radius: top 50px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Intac Industrial Systems</title>
+<meta name="description" content="Browse the full project gallery from Intac Industrial Systems — PP/FRP tanks, cooling towers, ducting, process equipment, precast moulds and fabrication yard work.">
+<link rel="icon" href="./assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
 
-  <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./Assets/intaclogo.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
-          Intac Industrial Systems
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <img src="./assets/logo.jpg" alt="Intac Industrial Systems logo">
+      <span class="brand-text">Intac Industrial<br>Systems<small>PP · FRP Fabrication</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="nav-cta" href="contact.html">Request a Quote</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-header">
+    <div class="container page-header-inner">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span>Gallery</div>
+      <h1>Project gallery</h1>
+      <p>A look inside the fabrication yard — completed tanks, towers, ducting, precast moulds and process equipment across our project history.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="tanks">Tanks & Vessels</button>
+        <button class="filter-btn" data-filter="cooling">Cooling Towers</button>
+        <button class="filter-btn" data-filter="ducting">Ducting</button>
+        <button class="filter-btn" data-filter="process">Process Equipment</button>
+        <button class="filter-btn" data-filter="moulds">Precast Moulds</button>
+        <button class="filter-btn" data-filter="misc">Accessories</button>
+        <button class="filter-btn" data-filter="site">Fabrication Yard</button>
       </div>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#services">Our Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#cta">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-
-  <section class="py-5 text-center container-fluid hero">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light my-3">Intac Industrial Systems</h1>
-        <p class="lead text-body-secondary">
-          Discover the excellence of craftsmanship in our diverse collection of Polypropylene Fiber Reinforced Plastic (PP FRP) Projects.
-          We take pride in delivering high-quality, durable, and aesthetically pleasing solutions.
-        </p>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-cat="tanks">
+          <div class="bracket-frame">
+            <img src="./assets/images/hdpe-spiral-tank.jpg" alt="HDPE Spiral Tank — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">HDPE Spiral Tank</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="tanks">
+          <div class="bracket-frame">
+            <img src="./assets/images/ms-frp-tank.jpg" alt="MS FRP Tank — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">MS FRP Tank</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="tanks">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-horizental-receiver.jpg" alt="PP FRP Horizental Receiver — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Horizental Receiver</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="tanks">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-storage-tank-2.jpg" alt="PP FRP Storage Tank — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Storage Tank</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="tanks">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-storage-tank-3.jpg" alt="PP FRP Storage Tank — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Storage Tank</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="tanks">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-storage-tank-4.jpg" alt="PP FRP Storage Tank — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Storage Tank</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="tanks">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-storage-tank.jpg" alt="PP FRP Storage Tank — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Storage Tank</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="tanks">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-tank-2.jpg" alt="PP FRP Tank — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Tank</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="tanks">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-tank.jpg" alt="PP FRP Tank — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Tank</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="tanks">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-vacuum-receiver.jpg" alt="PP FRP Vacuum Receiver — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Vacuum Receiver</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="cooling">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-induced-draft-cooling-tower-2.jpg" alt="FRP Induced Draft Cooling Tower — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Induced Draft Cooling Tower</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="cooling">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-induced-draft-cooling-tower.jpg" alt="FRP Induced Draft Cooling Tower — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Induced Draft Cooling Tower</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="ducting">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-ahu-ducting-2.jpg" alt="PP FRP AHU Ducting — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP AHU Ducting</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="ducting">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-ahu-ducting.jpg" alt="PP FRP AHU Ducting — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP AHU Ducting</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="process">
+          <div class="bracket-frame">
+            <img src="./assets/images/hdpe-spiral-scrubber.jpg" alt="HDPE Spiral Scrubber — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">HDPE Spiral Scrubber</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="process">
+          <div class="bracket-frame">
+            <img src="./assets/images/ms-pp-ajititor.jpg" alt="MS PP Ajititor — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">MS PP Ajititor</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="process">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-nutch-filter-2.jpg" alt="PP FRP Nutch Filter — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Nutch Filter</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="process">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-nutch-filter.jpg" alt="PP FRP Nutch Filter — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Nutch Filter</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="process">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-reactore.jpg" alt="PP FRP Reactore — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Reactore</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="process">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-scrubber-2.jpg" alt="PP FRP Scrubber — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Scrubber</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="process">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-scrubber.jpg" alt="PP FRP Scrubber — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Scrubber</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="process">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-water-vacuum-jet-system.jpg" alt="PP FRP Water Vacuum Jet System — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Water Vacuum Jet System</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="process">
+          <div class="bracket-frame">
+            <img src="./assets/images/pp-frp-watervacuum-jet-system.jpg" alt="PP FRP Watervacuum Jet System — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP FRP Watervacuum Jet System</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="process">
+          <div class="bracket-frame">
+            <img src="./assets/images/ppfrp-centrifugal-blower.jpg" alt="PP/FRP Centrifugal Blower — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP/FRP Centrifugal Blower</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="process">
+          <div class="bracket-frame">
+            <img src="./assets/images/ppfrp-reactore.jpg" alt="PP/FRP Reactore — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">PP/FRP Reactore</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="moulds">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-precast-compound-wall-mould.jpg" alt="FRP Precast Compound Wall Mould — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Precast Compound Wall Mould</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="moulds">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-precast-curb-moulds.jpg" alt="FRP Precast Curb Moulds — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Precast Curb Moulds</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="moulds">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-precast-manholl-mould.jpg" alt="FRP Precast Manholl Mould — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Precast Manholl Mould</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="moulds">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-precast-mould.jpg" alt="FRP Precast Mould — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Precast Mould</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="moulds">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-precast-moulds.jpg" alt="FRP Precast Moulds — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Precast Moulds</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="moulds">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-precsast-mould.jpg" alt="FRP Precsast Mould — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Precsast Mould</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="misc">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-biodiseter.jpg" alt="FRP Biodiseter — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Biodiseter</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="misc">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-dust-bins.jpg" alt="FRP Dust Bins — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Dust Bins</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="misc">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-motor-guards.jpg" alt="FRP Motor Guards — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Motor Guards</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="misc">
+          <div class="bracket-frame">
+            <img src="./assets/images/frp-packing-box.jpg" alt="FRP Packing Box — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">FRP Packing Box</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/20190302-113944.jpg" alt="Fabrication Yard — Mar 2019 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Mar 2019</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20191104-094255.jpg" alt="Fabrication Yard — Nov 2019 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Nov 2019</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20191104-183335.jpg" alt="Fabrication Yard — Nov 2019 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Nov 2019</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20191105-114320.jpg" alt="Fabrication Yard — Nov 2019 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Nov 2019</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20191129-112315.jpg" alt="Fabrication Yard — Nov 2019 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Nov 2019</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20191223-165853.jpg" alt="Fabrication Yard — Dec 2019 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Dec 2019</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200107-102914.jpg" alt="Fabrication Yard — Jan 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Jan 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200215-152826.jpg" alt="Fabrication Yard — Feb 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Feb 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200304-173323.jpg" alt="Fabrication Yard — Mar 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Mar 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200306-132002.jpg" alt="Fabrication Yard — Mar 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Mar 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200310-184315.jpg" alt="Fabrication Yard — Mar 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Mar 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200315-111748.jpg" alt="Fabrication Yard — Mar 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Mar 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200420-164449.jpg" alt="Fabrication Yard — Apr 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Apr 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200518-175248.jpg" alt="Fabrication Yard — May 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — May 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200618-181733.jpg" alt="Fabrication Yard — Jun 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Jun 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200912-202607.jpg" alt="Fabrication Yard — Sep 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Sep 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200923-182323.jpg" alt="Fabrication Yard — Sep 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Sep 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20200923-182358.jpg" alt="Fabrication Yard — Sep 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Sep 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20201002-144412.jpg" alt="Fabrication Yard — Oct 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Oct 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20201002-144444.jpg" alt="Fabrication Yard — Oct 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Oct 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20201014-191958.jpg" alt="Fabrication Yard — Oct 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Oct 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20201017-101211.jpg" alt="Fabrication Yard — Oct 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Oct 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20201105-163253.jpg" alt="Fabrication Yard — Nov 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Nov 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20201123-160400.jpg" alt="Fabrication Yard — Nov 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Nov 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20201202-152026.jpg" alt="Fabrication Yard — Dec 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Dec 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20201209-181926.jpg" alt="Fabrication Yard — Dec 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Dec 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20201209-182028.jpg" alt="Fabrication Yard — Dec 2020 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Dec 2020</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20210123-121455.jpg" alt="Fabrication Yard — Jan 2021 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Jan 2021</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20210125-114225.jpg" alt="Fabrication Yard — Jan 2021 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Jan 2021</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20210224-173612.jpg" alt="Fabrication Yard — Feb 2021 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Feb 2021</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20210310-175150.jpg" alt="Fabrication Yard — Mar 2021 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Mar 2021</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20210315-174616.jpg" alt="Fabrication Yard — Mar 2021 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Mar 2021</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20210909-133105.jpg" alt="Fabrication Yard — Sep 2021 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Sep 2021</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20210909-133109.jpg" alt="Fabrication Yard — Sep 2021 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Sep 2021</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20220521-123239.jpg" alt="Fabrication Yard — May 2022 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — May 2022</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20220627-111812.jpg" alt="Fabrication Yard — Jun 2022 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Jun 2022</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20220627-112757.jpg" alt="Fabrication Yard — Jun 2022 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Jun 2022</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20220630-153410.jpg" alt="Fabrication Yard — Jun 2022 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Jun 2022</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img-20220721-183224.jpg" alt="Fabrication Yard — Jul 2022 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Jul 2022</div>
+        </div>
+        <div class="gallery-item reveal" data-cat="site">
+          <div class="bracket-frame">
+            <img src="./assets/images/img20220824164435.jpg" alt="Fabrication Yard — Aug 2022 — Intac Industrial Systems" loading="lazy">
+          </div>
+          <div class="g-label">Fabrication Yard — Aug 2022</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="album py-5 bg-secondary">
-    <div class="container cards">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/PP FRP STORAGE TANK (2).jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                PP FRP Storage Tank
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/20190302_113944.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                PP FRP Storage Tank
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/FRP BIODISETER.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                FRP BIODISETER
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/FRP DUST BINS.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                FRP DUST BINS
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/FRP INDUCED DRAFT COOLING TOWER (2).jpg" alt="" width="100%" height="225"
-              role="img" aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                FRP INDUCED DRAFT COOLING TOWER
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/FRP INDUCED DRAFT COOLING TOWER.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                FRP INDUCED DRAFT COOLING TOWER
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/FRP MOTOR GUARDS.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                FRP MOTOR GUARDS
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/FRP PACKING BOX.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                FRP PACKING BOX
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/FRP PRECAST COMPOUND WALL MOULD.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                FRP PRECAST COMPOUND WALL MOULD
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/FRP PRECAST CURB MOULDS.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                FRP PRECAST CURB MOULDS
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/FRP PRECAST MANHOLL MOULD.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                FRP PRECAST MANHOLL MOULD
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/FRP PRECAST MOULD.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                FRP PRECAST MOULD
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/FRP PRECAST MOULDS.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                FRP PRECAST MOULDS
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/HDPE SPIRAL SCRUBBER.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                HDPE SPIRAL SCRUBBER
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/HDPE SPIRAL TANK.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                HDPE SPIRAL TANK
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/MS FRP TANK.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                MS FRP TANK
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/PP FRP AHU DUCTING (2).jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                PP FRP AHU DUCTING
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/PP FRP AHU DUCTING.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                PP FRP AHU DUCTING
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/PP FRP HORIZENTAL RECEIVER.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                PP FRP HORIZONTAL RECEIVER
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/PP FRP NUTCH FILTER (2).jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                PP FRP NUTCH FILTER
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/PP FRP REACTORE.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                PP FRP REACTORE
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/PP FRP SCRUBBER (2).jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                PP FRP SCRUBBER
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/PP FRP VACUUM RECEIVER.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                PP FRP VACUUM RECEIVER
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col my-2">
-          <div class="card">
-            <img src="./Assets/images/PP FRP WATER VACUUM JET SYSTEM.jpg" alt="" width="100%" height="225" role="img"
-              aria-label="Placeholder: Thumbnail">
-            <div class="card-body">
-              <p class="card-text text-center">
-                PP FRP WATER VACUUM JET SYSTEM
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-
-
+  <section class="cta-band">
+    <div class="container cta-band-inner">
+      <div>
+        <h2>Like what you see?</h2>
+        <p>Tell us about your project and we'll put together a quotation.</p>
+      </div>
+      <div class="btn-row">
+        <a href="contact.html" class="btn btn--primary">Request a Quote</a>
       </div>
     </div>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-prev" aria-label="Previous">&larr;</button>
+  <img src="" alt="">
+  <button class="lightbox-next" aria-label="Next">&rarr;</button>
+  <div class="lightbox-caption"></div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="./assets/logo.jpg" alt="Intac Industrial Systems logo">
+          <span>Intac Industrial Systems</span>
+        </div>
+        <p>Design and manufacturing of PP, FRP, HDPE &amp; MS industrial process equipment in Hyderabad, Telangana.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Materials</h4>
+        <a href="products.html#ducting">Polypropylene (PP)</a>
+        <a href="products.html#tanks">FRP</a>
+        <a href="products.html#hdpe">HDPE</a>
+        <a href="products.html#ms">Mild Steel</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Plot No. 49C, Sri Aravinda Enclave,<br>Chengicherla Village, Medchal-Malkajgiri,<br>Hyderabad – 500039</p>
+        <a href="tel:+919849387499">+91 98493 87499</a>
+        <a href="mailto:intacsystems@yahoo.co.in">intacsystems@yahoo.co.in</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Intac Industrial Systems. All rights reserved.</span>
+      <span>Proprietor — K R Mohan Reddy</span>
+    </div>
   </div>
+</footer>
 
-
-
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
+<script src="./js/main.js"></script>
 </body>
-
 </html>
